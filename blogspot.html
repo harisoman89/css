@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Blog Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .blog-container {
+            width: 60%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .author {
+            color: gray;
+            font-size: 14px;
+        }
+
+        
+        .content p::first-line {
+            font-weight: bold;
+        }
+
+        
+        .content p::first-letter {
+            font-size: 32px;
+            color: darkred;
+        }
+
+        
+        blockquote {
+            background-color: #eee;
+            padding: 10px;
+            margin: 20px 0;
+            font-style: italic;
+            position: relative;
+        }
+
+    
+        blockquote::before {
+            content: "“ ";
+            font-size: 30px;
+            color: darkred;
+        }
+
+        
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        
+        .subheadings {
+            display: flex;
+            gap: 20px;
+        }
+
+        .subheadings h4 {
+            margin: 10px 0;
+        }
+
+        
+        .subheadings h4 + h4 {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="blog-container">
+        <h2>My First Blog Post</h2>
+        <p class="author">By Hari | March 2026</p>
+
+        <div class="content">
+            <p>
+                Web design is an exciting field that combines creativity and logic.
+                Learning CSS pseudo-elements allows developers to create beautiful
+                typography effects easily. You can explore more about CSS at
+                <a href="#">this helpful guide</a>.
+            </p>
+
+            <blockquote>
+                Good design is as little design as possible.
+            </blockquote>
+
+            <div class="subheadings">
+                <h4>Related Topic 1</h4>
+                <h4>Related Topic 2</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Styled Webpage</title>
+    <style>
+        
+        .div1 p {
+            font-family: Arial, sans-serif;
+        }
+
+    
+        .div1 p::first-line {
+            font-weight: bolder;
+        }
+
+        
+        .div1 p::first-letter {
+            color: red;
+            font-size: 28px;
+        }
+
+    
+        h3 + h3 {
+            color: green;
+        }
+
+    
+        div > ul {
+            list-style-type: square;
+        }
+
+        
+        ul li:first-child a {
+            color: red;
+        }
+
+        
+        a:link {
+            color: blue;
+        }
+
+        
+        a:visited {
+            color: purple;
+        }
+
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="div1">
+        <h2>Welcome to Our Website</h2>
+
+        <p>
+            This is the first paragraph of the section. It contains some sample text 
+            to demonstrate first-line and first-letter styling effects.
+            
+            This is the first paragraph of the section. It contains some sample text 
+            to demonstrate first-line and first-letter styling effects
+        </p>
+
+        <p>
+            This is the second paragraph with additional content. The styling 
+            should apply the same visual effects as the first paragraph.
+        </p>
+    </div>
+
+    
+    <div>
+        <h3>First Heading</h3>
+        <h3>Second Heading</h3>
+    </div>
+
+    
+    <div>
+        <ul>
+            <li><a href="https://www.mashupstack.com/">link1</a></li>
+            <li><a href="https://www.facebook.com/">link2</a></li>
+            <li><a href="https://twitter.com/">link3</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
