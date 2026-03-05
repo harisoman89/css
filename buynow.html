@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: left;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+
+        
+        .product-img {
+            width: 100%;
+            border: 2px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        
+        @media (max-width: 600px) {
+            .card {
+                font-size: 14px;
+                text-align: center;
+                margin: 20px auto;
+            }
+        }
+
+        
+        @media (orientation: landscape) {
+            .card {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Product Image" class="product-img">
+        <h3>Sample Product</h3>
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>

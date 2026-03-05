@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Featured Blog Section</title>
+
+<style>
+
+
+.blog-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-post {
+    background: white;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+
+a[href^="https"] {
+    color: red;
+}
+
+
+img[src$=".jpg"] {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    .blog-section {
+        flex-direction: column;
+    }
+    .blog-post {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+@media (orientation: portrait) {
+    .blog-section {
+        background-color: lightyellow;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<section class="blog-section">
+
+    <div class="blog-post">
+        <h3>Web Design Trends</h3>
+        <img src="design.jpg" alt="Web Design">
+        <p>Discover the latest trends in modern web design.</p>
+        <a href="https://example.com/design">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>JavaScript Tips</h3>
+        <img src="javascript.jpg" alt="JavaScript">
+        <p>Improve your coding skills with these JavaScript tips.</p>
+        <a href="http://example.com/js">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>CSS Tricks</h3>
+        <img src="styles.jpg" alt="CSS">
+        <p>Learn powerful CSS tricks to enhance your website.</p>
+        <a href="https://example.com/css">Read More</a>
+    </div>
+
+</section>
+
+</body>
+</html>
